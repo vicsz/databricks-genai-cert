@@ -719,21 +719,7 @@ Use this mental checklist:
 
 ### 🧱 Chunking & Semantic Context
 
-- **Section Headers in Chunks**: Boost semantic clarity in RAG. Helps retriever/embedding models infer context (e.g., “Leave Policy” vs “Dress Code”).
-
----
-
-### 🛡️ Guardrails Overview
-
-| Type        | Purpose                                                        |
-|-------------|----------------------------------------------------------------|
-| Safety      | Block harmful, toxic, or offensive responses                   |
-| Security    | Prevent exposure of PII or sensitive data                      |
-| Compliance  | Enforce legal/policy limits (e.g., no medical advice)          |
-| Contextual  | Align output with session history/user role                    |
-| Evaluation  | Apply metrics or human review to assess output quality         |
-
-> Use a combination of system prompts, input filtering, and post-response validators.
+- **Section Headers in Chunks**: Boost semantic clarity in RAG. Helps retriever/embedding models infer context.
 
 ---
 
@@ -776,8 +762,11 @@ Use this mental checklist:
 - `pandas` – Manipulate structured data
 - `openai` – Interface with OpenAI models (e.g., GPT-4)
 - `faiss` – Self-hosted vector search engine
-- `scrapy` – Web scraping (⚠️ Not used for RAG text extraction)
-- `PyMuPDF`, `pdfplumber`, `doctr`, `Hugging Face’s datasets` – Other extraction options
+- `scrapy` – Web scraping 
+- `PyMuPDF` – Extract structured text from PDFs (preserves layout)
+- `pdfplumber` – Extract text from PDFs with table support
+- `doctr` – Deep learning OCR for scanned PDFs/images (DocTR = Document Text Recognition)
+- `datasets` (Hugging Face) – Load benchmark datasets for evaluation/fine-tuning
 
 ---
 
